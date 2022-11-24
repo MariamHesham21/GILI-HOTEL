@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;600;700&display=swap');
+:root{
+    --main-color:#D2AB95;
+    --sec-color:#2A334A;
+    --back-color:#EEEEEE;
+    --black:#000000;
+    --wheat:wheat;
+    --white:#fff;
+    --light:#ccc;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1) ;
+    --border:.3rem solid rgb(27, 27, 19);
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+    text-transform: capitalize;
+    background:var(--back-color);
+}
+.Contact{
+    display:contents;
+}
+.Contact-all{
+    width:100%;
+}
+.Contact-form{
+    display: grid;
+}
+.Contact-form input[type="email"], input[type="text"], input[type="phone"]{
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid #BBB;
+    border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    height: 40px;
+    padding-left: 10px;
+    color: #fff;
+    width: 100%;
+    margin-top: 3px;
+    font-weight: 300;
+}
+.Contact-msg{
+height: 41px;
+width: 269px;
+}
+
+.Contact-all{
+    display: flex;
+}
+.Contact-us{
+    margin: 1.5rem;
+    padding: .8rem 1rem;
+    border-radius:1rem;
+    background: rgba(24,33,66,.5);
+    width:40rem;
+    height:25rem;
+    margin-left: 25rem;
+    text-align: center;
+    position: absolute;
+
+}
+.Contact-info{
+    color: #fff;
+}
+/*old stay*/
+.stay-backg{
+    position: relative;
+}
+.stay-backg img{ 
+    width: 100%;
+}
+.stay-header{
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Cormorant', serif;
+    font-size:25px;
+    color:#D2AB95 ;
+    margin: 0 0 10px;
+}
+.menu-1{
+    display: flex;
+    margin-left:12rem;  
+    align-items: center;
+}
+.menu-1 .menu-cont{
+    padding: 1rem;
+ 
+}
+.menu-btn{
+    display: flex;
+    margin-left: 3rem;
+}
+.menu-btn .btn-vb{
+    background: var(--main-color);
+    color: #fff;
+    padding: .9rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius:7px;
+    margin-right:4px;
+    width:40%;
+}
+.btn-vb:hover{
+    letter-spacing:.1rem;
+    background: #000000;
+}
+
+
+
+.Stay-f{
+    position: absolute;
+    bottom: -150px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+.Stay-why{
+    max-width: 1080px;
+    text-align: center;
+    margin: 0 auto;
+    background: #FFF;
+    padding: 30px;
+}
+.stay-ri{
+    display:flex;
+    margin: 15px auto 0;
+}
+.stay-ri .SR{
+    float: left;
+    padding: 20px;
+}
+.stay-mid{
+    margin: 0 auto;
+    max-width: 1240px;
+    text-align: center;
+}
+.STMIHEAD{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: 'Cormorant', serif;
+    color: #b7b7b7;
+    margin: 0 0 10px;
+}
+.sim-table{
+    display: flex;
+}
+.STMIRI{
+    padding: 20px 10px;
+    background: #FFF;
+    padding-left: 2rem;
+}
+.STMILE{
+    padding: 20px 10px;
+    background: #FFF;
+}
+.sbookTitle {
+    font-size: 15px;
+    margin: 0 0 20px;
+    font-weight: 300;
+    text-align: center;
+}
+.Staydata{
+    display: flex;
+}
+/*about us*/
+.aboutUS-form{
+    margin-left:4rem;
+    margin-right:4rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: #fff;
+    border-radius: 2rem;
+    padding: 1rem;
+    font-size: 1.1rem;
+
+
+}
+.about-header{
+    font-family: 'Cormorant', serif;
+    text-align: center;
+    color: #D2AB95;
+}
+.about-header h1{
+    color: #2A334A;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+.about-header h4{
+    margin-top: -1rem;
+    color: #2A334A;
+}
+.about-text{
+    text-align: center;
+}
+.about-head{
+    color: #000;
+    font-family: 'Cormorant', serif;
+    text-align: center;
+    padding-top: 1rem;
+}
+.about-body{
+    display: flex;
+    margin-bottom: 2rem;
+}
+.about-body .about-lf{
+    margin-left: 8rem;
+    margin-bottom: 2rem;
+
+}
+.about-body .about-fl{
+    margin-left: 30rem;
+}
+.ab-text{
+    margin-left: 3rem;
+}
+.about-left{
+    width: 40%;
+}
+.ab-text  p{
+    margin: 5px;
+    border-bottom: 1px solid #BBB;
+}
+.about-lf{
+    display: flex;
+    border-bottom: 3px solid #2A334A;
+}
+.about-fl{
+    display: flex;
+    border-bottom: 3px solid #2A334A;
+
+
+}
+
+/* STANDARD DOUBLE ROOM*/
+.ROOM-TITLE{
+    font-size: 39px;
+    font-family: 'Cormorant', serif;
+    line-height: 1;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: left;
+    padding-left: 60px;
+    padding-top: 40px;
+    text-transform: uppercase;
+}
+.ROOM-BODY{
+    background-color: #fff;
+    display: flex;
+    margin-left: 2rem;
+    margin-right:2rem;
+    margin-top: 3rem;
+}
+.room-text{
+    padding-right:11rem;
+    padding-left: 2rem;
+    padding-top: 3rem;
+}
+
+.roomimg{
+    display: flex;
+}
+.roomimg-L{
+    padding-left:-10rem ;
+}
+.room-book{
+    margin-top: 3rem;
+}
+.book-body{
+    display: grid;
+}
+.book-date{
+    display: flex;
+}
+.book-date .book-checkin input{
+    border-bottom: 1px solid #000000 !important;
+    border: 0;
+    border-radius: 0;
+    -webkit-appearance: none;
+    height:40px;
+    padding-left:5px;
+    color: #000000;
+    width: 100%;
+    font-size: 15px;
+    background-size: 12%;
+}
+.book-date .book-checkout input {
+    border-bottom: 1px solid #000000 !important;
+    border: 0;
+    border-radius: 0;
+    -webkit-appearance: none;
+    height: 40px;
+    margin-left:12px;
+    color: #000000;
+    width: 100%;
+    font-size: 15px;
+    background-size: 12%;
+}
+select {
+    border-bottom: 1px solid #000000 !important;
+    border: 0;
+    border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    height: 40px;
+    padding-left: 5px;
+    color: #000000;
+    width: 100%;
+    font-size: 13px;
+}
+.booking-btn{
+    padding-top:2rem;
+    padding-left: 2rem;
+}
+.booking-btn .btn-vb{
+    background: var(--main-color);
+    color: #fff;
+    padding-top: 3rem;
+    padding: .9rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius:7px;
+    margin-right:4px;
+    width:40%;
+}
+.btn-vb:hover{
+    letter-spacing:.1rem;
+    background: #000000;
+}
+.ROOMTEXT-L{
+    display: flex;
+    margin-left: 5rem;
+}
+.ROOMTEXT-L .L-logo{
+    margin-top: 3rem;
+}
+.TEXT-L{
+    padding-left:11rem;
+    
+}
+.L-text{
+    margin-top: -2.3rem;
+    padding-left:1rem;
+    border-bottom: 2px solid #000000 !important;
+}
+/*
+.ROOM-TEXT{
+    display: flex;
+    width: 50%;
+    float: left;
+    padding: 10px
+}
+.roombodys{
+    border-top: 10px solid #000;
+}
+.room-logo img{
+    width: 22px;
+}
+.lo-text{
+    width: 90%;
+    float: right;
+    padding: 10px;
+}
+.lo-text h4{
+    font-weight: 400;
+    margin: 0 0 5px;
+
+}*/

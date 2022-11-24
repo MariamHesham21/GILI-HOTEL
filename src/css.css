@@ -1,0 +1,997 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;600;700&display=swap');
+
+:root{
+    --red:#950101;
+    --main-color:#DD4A48;
+    --black:#000000;
+    --wheat:wheat;
+    --white:#fff;
+    --light:#ccc;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1) ;
+    --border:.1rem solid rgb(27, 27, 19);
+}
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+.heading{
+    text-align: center;
+    color: #333;
+    padding-bottom: 3.5rem;
+    font-size: 3rem;
+}
+.heading span{
+    color: var(--main-color);
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+    text-transform: capitalize;
+}
+
+.btn{
+    text-decoration: none;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: var(--main-color);
+    padding: .9rem 4rem;
+    margin-top: .6rem;
+    text-align: center;
+    font-size: 1.7rem;
+    border-radius:7px;
+    display: inline-block;
+    cursor: pointer;
+    border: .2rem ;
+}
+.btn:hover{
+    letter-spacing:.08rem;
+    background: #000000;
+}
+
+.banner-img{
+    width: 100%;
+    display:flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: 10rem;
+    height: 100%;
+
+}
+.banner{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+
+
+}
+.banner-contain{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 2rem;
+    
+}
+.about-btn .btn{
+   margin-top:1.2rem;
+   padding: .1rem 3rem;
+
+}
+.text{
+    font-size: 3rem;
+    line-height: 1.4em;
+    color:#333;
+    padding:2rem;
+}
+.text h3{
+    margin-top: 20px;
+
+}
+span{
+    color:#DD4A48;
+    font-weight: bolder;
+
+}
+.text p{
+    color:#333;
+    font-size: 1.5rem;
+    line-height: 1.8;
+    padding: 1rem 0;
+}
+
+.nav{
+    background: var(--wheat);
+    top: 0; left: 0; right: 0;
+    background: white;
+    padding: 3rem 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: var(--box-shadow);
+    border-bottom: var(--black);
+    position: fixed;
+}
+nav{
+    display: contents;
+}
+
+.logo{
+    font-size: 2rem;
+    color: #000000;
+}
+.navbar-contain {
+    align-items: center;
+    font-size: 1.2rem;
+    margin: 0 1rem;
+    color: #000000;
+
+}  
+.navbar-contain a:hover{
+    color: var(--main-color);
+    border-bottom: .02rem solid var(--black);
+    padding-bottom: .5rem;
+}
+.icon-contain{
+    display: flex;
+
+}
+.icons{
+    font-size: 1.2rem;
+    margin:  0.5rem;
+    color: #000000;
+}
+.icons:hover{
+    color: var(--main-color);
+}
+
+.navbar-contain ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar-contain li a{
+text-decoration: none;
+color: #000000;
+padding: 0 10px;
+margin: 0 .5rem;
+
+}
+/*about*/
+.about-contian{
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    padding-top: 8.6rem;
+
+}
+.about-img img{
+width:80% ;
+height:29rem;
+
+}
+.about-text{
+    flex:1 1 45rem;
+    padding: 2rem;
+}
+.about-text h3{
+    font-size: 2rem;
+    color: #000000;    
+}
+.about-text p{
+    font-size: 1rem;
+    color: #333;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+.btn-about .btn{
+    align-items: center;
+    font-size:1rem;
+
+}
+
+/*menu home*/
+
+.menu-contian{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background:var(--white);
+    flex-wrap: wrap;
+
+}
+.menuh-img{
+    flex:0.5 1 45rem;
+}
+.menuh-img img{
+    width: 100%;
+    height: 32rem;
+    
+}
+
+.menu-text{
+    flex:1 1 45rem;
+    padding: 2rem;
+    margin-bottom:1rem ;
+    text-align:left;
+}
+.menu-text h3{
+    font-size: 2.5rem;
+    color: #000000; 
+
+}
+.menu-text p{
+    font-size: 2rem;
+    color: #333;
+    padding: 1rem 0;
+    line-height: 1.2;
+}
+.btn-menu .btn{
+    font-size:.9rem;
+
+}
+/*review*/
+.review{
+    padding-top: 8.5rem;
+}
+.box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1.3rem;
+}
+.box-container .box{
+    border: var(--border);
+    text-align:center;
+    padding:.5rem 2.2rem;
+    margin:1rem;
+    border-radius:2rem;
+}
+
+.box-container .box p{
+    font-size: 1.1rem;
+    line-height: 1.3;
+    color:#000000;
+    padding:1.5rem 0;
+}
+.box-container .box p span{
+    font-size: 2.5rem;
+}
+.box-container .box h3{
+    font-size: 1.5rem;
+    color: #000000;
+}
+.box-container .heading h1{
+    padding-bottom:1rem;
+}
+/*footer section*/
+footer .box-container{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+    background-color: #F23B3F;
+    text-align:left;
+    padding:3rem 2rem;
+    color:#ffffff;
+    justify-content: space-between;
+}
+footer .box-container a{
+    color: #ffffff;
+}
+
+footer .box-container .logo a{
+    font-size:2rem;
+}  
+footer .box-container a:hover{
+    color: rgb(0, 0, 0);
+    padding-bottom: 1rem;
+}
+footer .box-container h3{
+    font-size: 1.3rem;
+}
+footer .box-container p{
+    line-height:1.3;
+
+
+}
+footer .content a{
+    text-decoration: none;
+}
+footer .box-container .icon-footer img{
+    padding:0.3rem;
+    margin-left: .3rem;
+
+}
+
+
+/*login*/
+.login-form{
+    top:100px;
+    left: 0;
+    min-height:110vh;
+    width: 100%;
+    /*background: rgba(0,0,0,.7);*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index:10000;
+    
+}
+.login-form .log-ALL{
+    margin: 1.5rem;
+    padding: 1.5rem 1.5rem;
+    border-radius:.7rem;
+    background:var(--wheat);
+    width: 34rem;
+    height: 25rem;
+}
+.login-form h2{
+    text-align: center;
+    margin: 15px 10px 20px;
+    font-size: 30px;
+}
+.login-form  form h2 span{
+    color: var(--main-color);
+}
+.login-form .box-log{
+    font-size: 1.4rem;
+    border-radius:1rem;
+    border: .1rem solid rgba(0,0,0,.3);
+    width: 100%;
+    padding: .5rem;
+    margin: .5rem 0;
+    color: #000000;
+    text-transform:none;
+}
+.login-form  form  label{
+    font-size: 1rem;
+   margin-top:1rem ;
+}
+.login-form  .btn{
+    display: block;
+    width: 100%; 
+    padding: .5rem ;
+}
+.login-form  form a{
+    font-size: 1rem;
+    text-decoration: underline;
+}
+.log-ALL .icons{
+    position: absolute;
+    top:2rem;
+    right:3rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.check{
+    padding-top: 1rem;
+}
+.log-ALL h3{
+    text-align: center;
+    color:#333;
+    margin-top: .5rem;
+
+}
+.log-ALL .SignUpL{
+    display:flex;
+    margin-top: 1rem;
+}
+
+/*sign up*/
+.signup-form form .allform .box::placeholder{
+    font-size: 1rem;
+}
+.signup-form .boxs{
+    font-size: 1rem;
+
+}
+.signup-form{
+    position: fixed;
+    top:110px;
+    left: 0;
+    min-height:70vh;
+    width:100%;
+    /*background: rgba(240, 233, 233, 0.7);*/
+    background:#fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+}
+.signup-form .names{
+    font-size: .5rem;
+    display: flex;
+    padding-right: 7rem;
+}
+.signup-form .names label{
+    padding: 1.5rem;
+}
+
+.signup-form form{
+    margin: 1rem;
+    padding: .8rem 1.2rem;
+    border-radius:1rem;
+    background:var(--wheat);
+    width:48rem;
+    height:36.4rem;
+}
+.signup-form form .allform{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+}
+.signup-form form h3{
+    text-align: center;
+    margin: 14px 10px 20px;
+    font-size: 30px;
+}
+.signup-form form span{
+    color: var(--main-color);
+}
+.signup-form input[type="date"]{
+    width: 100%;
+    padding: 0.4rem;
+    font-size: 1.2rem;
+    color: #000000;
+    margin: .3rem 0;
+    border: .05rem solid rgba(0,0,0,.3);
+    text-transform:none;
+    border-radius:.5rem;
+    display: inline-block;
+    opacity: 1;
+
+}
+.signup-form input[type="date"]::placeholder{
+    opacity:0.3;
+}
+
+.signup-form input[type="email"],input[type="text"],input[type="password"].box{
+    width: 100%;
+    padding: 0.85rem;
+    font-size: 1.2rem;
+    color: #000000;
+    margin: .1rem 0;
+    border: .1rem solid rgba(0,0,0,.3);
+    text-transform:none;
+    border-radius:.5rem;
+    display: flex;
+}
+
+.signup-form form .allform label{
+    font-size: 1.3rem;
+}
+.signup-form #close-S{
+    position: absolute;
+    top:1.5rem;
+    right:24.5rem;
+    font-size:2rem;
+    cursor: pointer;
+    color: #000000;
+}
+.signup-form #close-S:hover{
+    color: #DD4A48;
+}
+.gender{
+    width: 100%;
+    padding-left:4rem;
+    font-size: 1.2rem;
+    color: #000000;
+    word-spacing: 2px;
+}
+.signup-form .btn{
+     font-size: medium;
+ }
+/*reservation*/
+.reserv-container {
+    display: flex;
+    padding-top: 13rem;
+    font-size: 3.5rem;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+    background-image: url(./photo-react/back.png);
+    background-size: 100% 100%;
+}
+
+.reserv-container .reservation{
+    width: 40%;
+    height: 50%;
+}
+
+input[type="number"],input[type="date"],input[type="time"]{
+    width: 80%;
+    padding: 1rem;
+    font-size: 1.7rem;
+    color: #000000;
+    margin: .7rem 0;
+    border: .1rem solid rgba(0,0,0,.3);
+    text-transform:none;
+    border-radius:.5rem;
+    display: flex;
+    opacity: 0.7;
+
+}
+
+.reserv-container .reservation .btn{
+    margin-left: 8rem;
+    margin-bottom: 100px;
+}
+/*setting*/
+.setting{
+    display:block;
+    width: 100%;
+    height: 100%;
+    padding-top:9rem;
+
+   
+}
+.setting .titel {
+    text-align: center;
+}
+.setting-contain ul{
+    display: block;
+    margin:2px;
+    padding:1px;
+}
+.setting-contain p{
+    padding:10px;
+    margin:10px;
+    width: 30%;
+   background-color:rgb(250, 250, 250);
+   
+}
+
+.setting-contain p a{
+    color:#000000;
+    padding: 14px 25px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    font-weight : bold ;
+
+}
+.setting-contai a:hover, a:active {
+    background-color: rgb(175, 175, 175);
+}
+.setting-contain p a span{
+    float: right;
+    color:#000000;
+    font-weight : bold ;font-size: 20px;
+
+}
+/*main Menu*/
+.title-menu{
+    list-style-type: none;
+    display: flex;
+    padding-left:30rem;
+    padding-bottom:3rem ;
+    padding-top:4rem;
+    align-items: center;
+    font-size: 1.2rem;   
+}
+.con-menu .title-menu a{
+    color: #000000;
+    padding: 2rem;
+        text-decoration: none;
+        color: #000000;
+        padding: 0 10px;
+        margin: 0 .5rem; 
+        border-bottom: 2px solid #191919; 
+}
+.con-menu .title-menu a:hover{
+    color: var(--main-color);
+    border-bottom: .02rem solid var(--black);
+    padding-bottom: .5rem;
+}
+.con-menu{
+    margin-top:10rem;
+    margin-left:1px;
+}
+
+.allMenu h4{
+    padding-top:4rem;
+}
+.con-menu .allMenu{
+    padding-top: 4rem;
+
+}
+.script{
+    padding:2rem;
+    border:var(--border);
+}
+.script h3{
+    font-size:larger;
+    line-height: 3rem;
+}
+.con-menu .chicken{
+    display: flex;
+    padding-left: 2rem;
+    justify-content: space-between;
+}
+.con-menu .meat{
+    display: flex;
+    padding-left: 2rem;
+    justify-content: space-between;
+}
+.con-menu .Salad-c{
+    display: flex;
+    padding-left: 2rem;
+    justify-content: space-between;
+}
+.con-menu .drinks{
+    display: flex;
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+    justify-content: space-between;
+
+}
+
+.allMenu .add-to-cart{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    color: #fff;
+    background: var(--main-color);
+    cursor: pointer;
+    border: .2rem ;
+    border-radius: 5px;
+}
+.allMenu .add-to-cart:hover{
+    background: #000000;
+}
+.allMenu .icons{
+    font-size: 1.7rem;
+    margin:  0.5rem;
+    color: #000000;
+    margin-top: 8px;
+    background: #ffffff;
+    margin-left: 20px;
+    border: none
+}
+.allMenu .icons:hover{
+    color: #950101;
+}
+
+/*
+.con-menu .allMenu{
+  
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 5rem;
+    text-align:left;
+    padding:1rem 2rem;
+    justify-content: space-between;
+}
+.con-menu .allMenu .heading .h1{
+    padding-bottom: 2rem;
+}
+
+.con-menu .allMenu .chicken, .meat, .Salad, .drinks {
+    display: grid; 
+    gap: 1.5rem;
+
+}
+
+.con-menu .allMenu .chicken, .meat, .Salad, .drinks p{
+    text-align: left;
+}
+.con-menu .allMenu .script h3,h2 {
+    text-align: center;
+}
+
+
+.con-menu .allMenu .chicken, .meat, .Salad, .drinks .script{
+    font: small-caption;
+}
+.con-menu .allMenu .chicken .script .h3{
+    display: inline;
+    position: absolute;
+    margin-left: 50px
+}
+
+.allMenu .add-to-cart{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    color: #fff;
+    background: var(--main-color);
+    cursor: pointer;
+    border: .2rem ;
+    border-radius: 5px;
+}
+.allMenu .add-to-cart:hover{
+    background: #000000;
+}
+
+
+
+.allMenu .icons{
+    font-size: 1.7rem;
+    margin:  0.5rem;
+    color: #000000;
+    margin-top: 8px;
+    background: #ffffff;
+    margin-left: 20px;
+    border: none
+}
+.allMenu .icons:hover{
+    color: #950101;
+}*/
+/*Gallry*/
+.gallry-contain .gal-con{
+    display: flex;
+    gap:0.5rem;
+    padding-left:4rem;
+    margin:1rem;
+
+ }
+/*Forget Password*/
+.Forget-pass{
+    top:100px;
+    left: 0;
+    min-height:110vh;
+    width: 100%;
+    /*background: rgba(0,0,0,.7);*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index:10000;
+
+}
+.Forget-pass .reset{
+    margin: 1.5rem;
+    padding: 1.5rem 1.5rem;
+    border-radius:.7rem;
+    background:var(--wheat);
+    width: 36rem;
+    height: 25rem;
+}
+.Forget-pass .fas-left{
+    top:1.5rem;
+    font-size:1.5rem;
+    color: #000000;
+    cursor: pointer;
+}
+.Forget-pass .fas-left:hover{
+    color: #DD4A48;
+}
+.Forget-pass .forgetpass-form{
+    margin-top:1.5rem;
+    padding: 2.5rem;
+    line-height: 1.5;
+
+}
+.Forget-pass .reset-form{
+    margin-top: 1rem;
+}
+.Forget-pass .reset-form label{
+    font-size:1.2rem;
+}
+.Forget-pass .reset-form .box{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: #000000;
+    margin: .1rem 0;
+    border: .05rem solid rgba(0,0,0,.3);
+    text-transform:none;
+    border-radius:.5rem;
+    display: flex;
+
+}
+.Forget-pass .reset-form .box::placeholder{
+    font-size: 1rem;
+}
+.Forget-pass .reset-btn {
+    margin-left:1.5rem;
+    margin-top: 1rem;
+}
+.Forget-pass .reset-btn .btn{
+    font-size:1rem;
+    border-radius:.8rem;
+    margin-right:1rem;
+
+}
+/*cart*/
+.cart-item{
+    margin-top:9rem;
+}
+.cart-item .items{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+
+}
+.cart-item .items p{
+font-size: 2rem;
+margin-top: 10rem;
+padding: 1rem;
+}
+
+/*fav*/
+.fav-item{
+    margin-top:9rem;
+}
+.fav-item .items{
+    display:grid;
+    text-align: center;
+    justify-content: center;
+    margin-top:7rem;
+
+}
+.fav-item .items p{
+font-size:1.5rem;
+padding: 1rem;
+}
+.fav-item .items .btn{
+    font-size:1rem;
+}
+/* Account info */
+.account-info{
+    display:block;
+    width: 100%;
+    height: 100%;
+    padding-top:9.5rem;
+}
+.account-info .titel {
+    text-align: center;
+    margin-bottom: 3rem
+}
+.account-info-contain ul{
+    display: block;
+    margin:2px;
+    padding:1px;
+}
+.account-info-contain ul p{
+    padding:10px;
+    margin:20px;
+    width: 30%;
+   background-color:rgb(250, 250, 250);
+   width: 50%;
+   font-weight : bold ;
+   font-size: 20px;
+
+}
+
+.account-info-contain p span{
+    color:#000000;
+    font-weight: normal;
+    margin-left: 1rem;
+}
+
+/* My orders */
+
+.my-orders{
+    display:block;
+    width: 100%;
+    height: 100%;
+    padding-top:9.5rem;
+}
+.my-orders .titel {
+    text-align: center;
+    margin-bottom: 3rem
+}
+.my-orders-contain ul{
+    display: block;
+    margin:3rem;
+    padding:1px;
+
+}
+.my-orders-contain ul p{
+    padding:10px;
+    margin:20px;
+    width: 30%;
+    height: 80px;
+   background-color:rgb(225, 225, 225);
+   width: 50%;
+   font-weight : bold ;
+   font-size: 20px;
+
+}
+.my-orders-contain p span{
+    color:#000000;
+    font-weight: normal;
+    margin-left: 1rem;
+} 
+.my-orders-contain p .btn{
+    float: right;
+    size: 3rem;
+    padding:auto; ;
+    margin-top:-0.05rem;
+}
+
+/* change-email */
+.change-email {
+    display:block;
+    width: 100%;
+    height: 100%;
+    padding-top:9.5rem;
+    align-items: center;
+    justify-content: center;
+}
+.change-email .titel {
+    text-align: center;
+    margin-bottom: 3rem
+}
+.change-email form {
+    font-size: 1.5rem;
+    height: 80%;
+    margin: 2rem;
+    margin-top: -3rem;
+}
+.change-email p{
+    font-size: 1.5rem;
+    padding-top: 3rem;
+    text-align: center;
+    justify-content: center;
+}
+.change-email .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.change-email .container .btn{
+    width: 100%;
+}
+
+
+/* change password */
+
+.change-pass {
+    display:block;
+    width: 100%;
+    height: 100%;
+    padding-top:9.5rem;
+    align-items: center;
+    justify-content: center;
+}
+.change-pass .titel {
+    text-align: center;
+    margin-bottom: 3rem
+}
+.change-pass .changepass-form {
+    font-size: 1.5rem;
+    height: 80%;
+    margin: 2rem;
+    margin-top: -3rem;
+}
+.change-pass p{
+    font-size: 1.5rem;
+    padding-top: 3rem;
+    text-align: center;
+    justify-content: center;
+}
+.change-pass .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.change-pass .container .btn{
+    width: 100%;
+}
+
+.change-pass input[type="password"]{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.3rem;
+    color: #000000;
+    margin: .1rem 0;
+    border: .05rem solid rgba(0,0,0,.3);
+    text-transform:none;
+    border-radius:.5rem;
+    display: flex;
+}

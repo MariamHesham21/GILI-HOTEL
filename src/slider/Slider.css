@@ -1,0 +1,123 @@
+.slider{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-arrow{
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    font-size: 3rem;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+    opacity: 0.5;
+}
+.left-arrow{
+    position: absolute;
+    top: 50%;
+    left:30px;
+    font-size: 3rem;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+    opacity: 0.5;
+
+}
+.left-arrow:hover,.right-arrow:hover{
+    color: #fff;
+}
+.slider .home-text{
+    font-size:2rem;
+    line-height: 1.2em;
+    color:var(--black);
+    padding:1rem;
+    text-align: center;
+    position:absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+/*slider*/
+.container-slider{
+    text-align: center;
+    background-color: #fff;
+    margin: 3rem;
+    border-radius: 2rem;
+}
+.slider-text{
+    padding: 3rem;
+
+}
+.slider-text h2{
+    color: #D2AB95;
+}
+.slider-text .nav-btn:hover{
+    background:#D2AB95;
+    letter-spacing:.2rem;
+    color: #fff;
+    border: #fff;
+}
+/*RES*/
+.ResSlider-tex{
+    font-size:1.5rem;
+    color:var(--black);
+    position:absolute;
+    top: 20%;
+    display: block;
+    width: 100%;
+    margin: auto;
+    padding: 2rem;
+
+}
+.ResSlider-tex h3{
+
+    font-size: 30px;
+    line-height: normal;
+    font-weight: 400;
+    font-style: normal;
+    color: #D2AB95;
+    background-color: #fff;
+    display: table;
+    padding: 5px;
+
+}
+.ResSlider{
+    position: relative;
+    display: flex;
+}
+.ResActivity{
+    background-color: #fff;
+    margin: 3rem;
+    border-radius: 2rem;
+    display: flex;
+    
+
+}
+.activtext h1,h3{
+    padding-left: 1rem;
+    text-align: center;
+}
+.activtext h3{
+    background-color: #D2AB95;
+    font-size: 20px;
+    line-height: normal;
+    padding: 5px;
+    display: table;
+    color:aliceblue;
+}
+.activtext{
+padding-top: 15rem;
+padding-left: 6rem;
+}
+.activtext .swipbtn{
+padding-left: 6rem;}
+.activtext .nav-btn:hover{
+    text-align: center;
+    background-color: black;
+    color:aliceblue;
+
+    
+}
